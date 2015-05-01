@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="ardusim" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/ardusim" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="arduino/variants/standard" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/ardusim" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+			<Target title="StaticLib">
+				<Option output="bin/Release/ardusim" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="obj/Release/" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+			<Add option="-x c++" />
+			<Add option="-DARDUSIM" />
+			<Add option="-D__AVR_ATmega2560__" />
+			<Add directory="arduino/cores" />
+			<Add directory="arduino/variants/standard" />
+			<Add directory="include" />
+		</Compiler>
+		<Unit filename="arduino/cores/Arduino.h" />
+		<Unit filename="arduino/cores/CDC.cpp" />
+		<Unit filename="arduino/cores/HID.cpp" />
+		<Unit filename="arduino/cores/HardwareSerial.cpp" />
+		<Unit filename="arduino/cores/Print.cpp" />
+		<Unit filename="arduino/cores/Stream.cpp" />
+		<Unit filename="arduino/cores/Tone.cpp" />
+		<Unit filename="arduino/cores/USBCore.cpp" />
+		<Unit filename="arduino/cores/WInterrupts.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="arduino/cores/WMath.cpp" />
+		<Unit filename="arduino/cores/WString.cpp" />
+		<Unit filename="arduino/cores/ardusim.h" />
+		<Unit filename="arduino/cores/libctb/fifo.cpp" />
+		<Unit filename="arduino/cores/libctb/iobase.cpp" />
+		<Unit filename="arduino/cores/libctb/kbhit.cpp" />
+		<Unit filename="arduino/cores/libctb/portscan.cpp" />
+		<Unit filename="arduino/cores/libctb/serportx.cpp" />
+		<Unit filename="arduino/cores/main.cpp" />
+		<Unit filename="arduino/cores/new.cpp" />
+		<Unit filename="arduino/cores/wiring.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="arduino/cores/wiring_analog.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="arduino/cores/wiring_digital.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="arduino/cores/wiring_private.h" />
+		<Unit filename="arduino/cores/wiring_pulse.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="arduino/cores/wiring_shift.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="arduino/variants/standard/pins_arduino.h" />
+		<Unit filename="include/avr/common.h" />
+		<Unit filename="include/avr/fuse.h" />
+		<Unit filename="include/avr/interrupt.h" />
+		<Unit filename="include/avr/io.h" />
+		<Unit filename="include/avr/iom328p.h" />
+		<Unit filename="include/avr/lock.h" />
+		<Unit filename="include/avr/pgmspace.h" />
+		<Unit filename="include/avr/portpins.h" />
+		<Unit filename="include/avr/sfr_defs.h" />
+		<Unit filename="include/avr/version.h" />
+		<Unit filename="sketch/sketch.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

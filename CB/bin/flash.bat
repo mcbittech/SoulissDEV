@@ -1,0 +1,1 @@
+AVRDUDE -F -C"../etc/avrdude.conf" -V -patmega328p -cusbasp -Pusb -Uflash:w:%1:i
